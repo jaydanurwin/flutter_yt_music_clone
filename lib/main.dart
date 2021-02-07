@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         backgroundColor: Colors.black,
         accentColor: Colors.white,
+        brightness: Brightness.dark,
         textTheme: TextTheme(
           headline1: GoogleFonts.openSans(
               fontSize: 95, fontWeight: FontWeight.w300, letterSpacing: -1.5),
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           headline5:
               GoogleFonts.openSans(fontSize: 24, fontWeight: FontWeight.w400),
           headline6: GoogleFonts.openSans(
-              fontSize: 18, fontWeight: FontWeight.w500, letterSpacing: 0.15),
+              fontSize: 18, fontWeight: FontWeight.w600, letterSpacing: 0.15),
           subtitle1: GoogleFonts.openSans(
               fontSize: 16, fontWeight: FontWeight.w400, letterSpacing: 0.15),
           subtitle2: GoogleFonts.openSans(
