@@ -1,6 +1,4 @@
 import 'package:flutter_yt_music_clone/constants.dart';
-import 'package:flutter_yt_music_clone/screens/pages/home_page.dart';
-import 'package:flutter_yt_music_clone/screens/pages/music_library_page.dart';
 import 'package:flutter_yt_music_clone/y_t_music_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -14,11 +12,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   final List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
+    Text(
+      'Home Page',
+    ),
     Text(
       'Explore Page',
     ),
-    MusicLibrary(),
+    Text(
+      'Library Page',
+    ),
   ];
 
   void _onItemTapped(int index) {
