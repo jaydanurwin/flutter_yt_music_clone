@@ -10,7 +10,8 @@ class MusicCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.35,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -26,17 +27,15 @@ class MusicCarousel extends StatelessWidget {
                         .copyWith(fontWeight: FontWeight.w700),
                   ),
                 ),
-          Flexible(
-            child: Container(
-              child: ListView.builder(
-                padding: EdgeInsets.fromLTRB(8, 0, 8, 0),
-                scrollDirection: Axis.horizontal,
-                itemCount: musicList.length,
-                itemBuilder: (BuildContext context, int index) {
-                  final Music music = musicList[index];
-                  return MusicCard(music: music);
-                },
-              ),
+          Expanded(
+            child: ListView.builder(
+              padding: EdgeInsets.fromLTRB(8, 0, 8, 0),
+              scrollDirection: Axis.horizontal,
+              itemCount: musicList.length,
+              itemBuilder: (BuildContext context, int index) {
+                final Music music = musicList[index];
+                return MusicCard(music: music);
+              },
             ),
           ),
         ],
