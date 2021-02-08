@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           headline4: GoogleFonts.openSans(
               fontSize: 34, fontWeight: FontWeight.w400, letterSpacing: 0.25),
           headline5:
-              GoogleFonts.openSans(fontSize: 24, fontWeight: FontWeight.w400),
+              GoogleFonts.openSans(fontSize: 20, fontWeight: FontWeight.w700),
           headline6: GoogleFonts.openSans(
               fontSize: 18, fontWeight: FontWeight.w600, letterSpacing: 0.15),
           subtitle1: GoogleFonts.openSans(
